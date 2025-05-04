@@ -5,16 +5,33 @@
   "type": "module",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+     "start": "ts-node src/index.ts",
+     "dev": "nodemon src/index.ts",
+     "build": "tsc",
+     "test": "jest"
   },
   "keywords": [
-    "M-Pesa"
+    "M-Pesa",
+    "payment",
+    "gateway",
+    "lipa na mpesa",
+    "lipa",
+    "daraja api"
   ],
   "author": "Arnold Musandu",
   "license": "ISC",
   "dependencies": {
-    "axios": "^1.7.7",
-    "express": "^4.21.0",
-    "nodemon": "^3.1.7"
+    "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^9.26.0",
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
   }
 }
